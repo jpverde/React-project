@@ -11,6 +11,9 @@ class App extends React.Component {
             (err) => this.setState({ errorMessage: err.message })
         );
     }
+    componentDidMount() {
+        console.log('My component');
+    }
 
     // React says you have to define render
     render() {
